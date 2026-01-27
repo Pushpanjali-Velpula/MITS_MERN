@@ -1,0 +1,21 @@
+.navbar{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+ul{
+    list-style: none;
+    background: chocolate;
+    padding: 10px;
+}
+li{
+    background-color:white;
+    padding:10px;
+    border-radius: 10px;
+}
+li:hover{
+    background-color:rgb(248, 8, 140);
+    color:white;
+    padding:10px;
+    border-radius: 10px;
+}
