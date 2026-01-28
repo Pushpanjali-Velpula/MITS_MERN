@@ -1,8 +1,17 @@
-import React from 'react'
+import React,{useContext} from 'react'
+import ThemeContext from '../Context/ThemeContext'
+import AuthContext from '../context/AuthContext';
 
-const Service = () => {
+const Service = ({name}) => {
+  const theme=useContext(ThemeContext);
+  const user=useContext(AuthContext);
   return (
-    <div>Service</div>
+    <div>
+      <h1>{theme}</h1>
+      <p>Id : {user.id}</p>
+      <p>Name : {user.name}</p>
+      <p>Email : {user.email}</p>
+    </div>
   )
 }
 
