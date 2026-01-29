@@ -1,4 +1,4 @@
-import React,{useState} from 'react'
+import React,{useMemo, useState} from 'react'
 
 const UseMemo = () => {
     const [count,setCount]=useState(0);
@@ -7,7 +7,9 @@ const UseMemo = () => {
         console.log("Calculation done...");
         return Math.pow(num,3);
     }
-    const result=cubeNum(number);   
+    const result=useMemo(()=>{
+        return cubeNum(number)
+    },[number]);  
   return (
     <div>
         <h1>Count : {count}</h1>
