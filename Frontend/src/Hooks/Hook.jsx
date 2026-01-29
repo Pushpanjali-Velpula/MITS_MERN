@@ -11,6 +11,7 @@ const Hook = () => {
             <li><Link to="useRef">UseRef</Link></li>
             <li><Link to="useReducer">UseReducer</Link></li>
             <li><Link to="useMemo">UseMemo</Link></li>
+            <li><Link to="useCallback">UseCallback</Link></li>
         </ol>
         <Outlet/>
     </div>

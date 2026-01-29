@@ -10,6 +10,7 @@ const Contact = ({name}) => {
     <div>
       <h1>Name : {name1}</h1>
       <button onClick={toggleName}>Toogle</button>
+      <Service/>
     </div>
   )
 }
