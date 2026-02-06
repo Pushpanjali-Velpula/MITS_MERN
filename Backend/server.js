@@ -14,9 +14,9 @@ app.use(express.json());
 app.use('/api/todo', todoRoute);
 app.use('/api/user', userRoute);
 
-const PORT= process.env.PORT ||5000;
-app.listen(5000,()=>{
-    console.log(`server is running at port http://localhost:${5000}`);
+const PORT= process.env.PORT;
+app.listen(PORT,()=>{
+    console.log(`server is running at port http://localhost:${PORT}`);
 })
 
 
